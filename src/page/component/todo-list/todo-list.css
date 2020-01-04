@@ -1,0 +1,20 @@
+.todo-list {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 400px;
+}
+
+.todo-list .todo {
+    padding: 8px;
+    border: 2px solid lightblue;
+    border-bottom: 0px;
+}
+
+.todo-list .todo:last-child {
+    border-bottom: 2px solid lightblue;
+}
+
+.todo-list .message {
+    padding: 8px;
+    border: 2px solid lightblue;
+}

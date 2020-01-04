@@ -1,0 +1,32 @@
+<!doctype html>
+
+<head>
+    <meta charset=utf-8>
+    <title>DOM as Flux-like Store</title>
+
+    <script src="./src/app.ts"></script>
+    <link rel="stylesheet" type="text/css" href="./src/app.css">
+</head>
+
+<body>
+    <h1>Todos</h1>
+
+    <div id="selected-todo-counter" data-count="NaN">
+        <span>Number of selected todos:</span>
+        <span class="counter">-</span>
+    </div>
+
+    <div id="todo-container" class="todo-list">
+        <div class="todo" data-id="1" data-selected="false">
+            <input type="checkbox"> Todo 1
+        </div>
+        <div class="todo" data-id="2" data-selected="true">
+            <input type="checkbox" checked="checked"> Todo 2
+        </div>
+        <div class="todo" data-id="3" data-selected="false">
+            <input type="checkbox"> Todo 3
+        </div>
+    </div>
+
+    <button id="reload-button">Reload</button>
+</body>
