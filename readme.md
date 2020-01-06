@@ -16,7 +16,7 @@ Of course the server generated HTML must match the HTML created on the client.
 That can for example be achieved by a templating engine like [handlebars](https://handlebarsjs.com/) that is available for JavaScript as well for Java ([Handlebars.java](https://github.com/jknack/handlebars.java)).
 
 In terms of an approach to implement Flux without one of the big mentioned frameworks, there are some similarities with [jquery-flux-todo](https://github.com/talyssonoc/jquery-flux-todo).
-But in jquery-flux-todo has not the focus on usig the DOM as the state store.
+But in jquery-flux-todo has not the focus on using the DOM as the state store.
 
 The todo demo application is a plain JavaScript application without any dependencies.
 For triggering the actions custom DOM events (`CustomEvent` instances) are used.
@@ -107,5 +107,5 @@ But using the DOM definitively does not provide the advantage of immutable state
 It also does not fully address the original Flux idea to have more real data instead of derived data.
 The data stored in the DOM is of course very close to display concerns.
 
-An option to simplify unit testing could be an function like `createDOMMap(...)` described in [How to create a map of DOM nodes with vanilla JS](https://gomakethings.com/how-to-create-a-map-of-dom-nodes-with-vanilla-js/).
-That would allow to pass the current DOM state as an plain data structure without any dependency on the DOM.
+An option to simplify unit testing could be a function like `createDOMMap(...)` described in [How to create a map of DOM nodes with vanilla JS](https://gomakethings.com/how-to-create-a-map-of-dom-nodes-with-vanilla-js/).
+That would allow to pass the current DOM state as a plain data structure without any dependency on the DOM.
